@@ -30,7 +30,7 @@ public class EncodingEx extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-	    System.out.println("doGet ¸Þ¼Òµå°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù.");
+	    System.out.println("doGet ï¿½Þ¼Òµå°¡ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	
 	    String name = request.getParameter("name");
 	   
@@ -38,7 +38,7 @@ public class EncodingEx extends HttpServlet {
 	   PrintWriter wt = response.getWriter();
 	   
 	   wt.println("<html><head></head><body>");
-	   wt.println("ÀÌ¸§Àº : "+name+"ÀÔ´Ï´Ù.");
+	   wt.println("ï¿½Ì¸ï¿½ï¿½ï¿½ : "+name+"ï¿½Ô´Ï´ï¿½.");
 	   wt.println("</body></html>");
 	   
 	   wt.close();
@@ -51,16 +51,16 @@ public class EncodingEx extends HttpServlet {
 		// TODO Auto-generated method stub
 		// doGet(request, response);
 		
-	    System.out.println("doPost ¸Þ¼Òµå°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù.");
+	    System.out.println("doPost ï¿½Þ¼Òµå°¡ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	    
-	    request.setCharacterEncoding("EUC-KR"); // request°´Ã¼ÀÇ ÆÄ¶ó¹ÌÅÍ°ªÀ» ÇÑ±Û·Î ÀÎÄÚµù
+	    request.setCharacterEncoding("EUC-KR"); // requestï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ä¶ï¿½ï¿½Í°ï¿½ï¿½ï¿½ ï¿½Ñ±Û·ï¿½ ï¿½ï¿½ï¿½Úµï¿½
 	   String name = request.getParameter("name");
 	   
 	   response.setContentType("text/html; charset=EUC-KR");
 	   PrintWriter wt = response.getWriter();
 	   
 	   wt.println("<html><head></head><body>");
-	   wt.println("ÀÌ¸§Àº : "+name+"ÀÔ´Ï´Ù.<br/>");
+	   wt.println("ï¿½Ì¸ï¿½ï¿½ï¿½ : "+name+"ï¿½Ô´Ï´ï¿½.<br/>");
 	   wt.println("</body></html>");
 	   
 	   wt.close();
